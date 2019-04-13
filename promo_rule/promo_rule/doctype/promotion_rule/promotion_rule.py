@@ -393,7 +393,7 @@ def calculate_special_discount(doc,p):
 		total_amount =igamount.get(p.base, 0)
 		frappe.errprint("target item present")
 		frappe.errprint(iglist.get(p.base, 0))
-		frappe.errprint(igamout.get(p.base, 0))
+		frappe.errprint(igamount.get(p.base, 0))
 		if total_amount > p.for_amount:
 			frappe.errprint("discount to be applied ")
 			if total_qty <= p.base_qty:
